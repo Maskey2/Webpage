@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lisa Kuhn</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisa Kuhn</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins|Righteous&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
  </script>
 <body>
 <style>
 
 body{
-	font-family: 'Roboto', sans-serif;
-	background-color:#ebf4f7; 
-	padding:0;
-	margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color:#ebf4f7; 
+  padding:0;
+  margin: 0;
 }
 .main{
-  background-image: url('img2.jpg');
+  background-image: url('img/img2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -29,6 +30,7 @@ body{
   right: 200px;
   color:white;
   font-size: 85px;
+  font-family: 'Righteous', cursive;
 }
 .text2 {
   position: absolute;
@@ -36,6 +38,7 @@ body{
   right: 200px;
   color:white;
   font-size: 24px;
+   font-family: 'Righteous', cursive;
 }
 
 .nav {
@@ -81,11 +84,52 @@ body{
   display: none;
 }
 .user{
-  height: 300px; 
+  height: 320px; 
   margin:100px; 
-  padding-left: 100px;
+  margin-left: 200px;
+  border: 5px solid #72a1ba;;
   }
 
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+p{
+  font-size: 15px;
+}
+a{
+  text-decoration: none;
+}
+
+.button1{
+  border:1px solid #50a371;
+  border-radius: 5px;
+  color: black; 
+  background-color:#b1f0ca;
+  font-size: 15px;
+  cursor: default;
+}
+.button2{
+  border:1px solid #50a371;
+  border-radius: 5px;
+  color: black; 
+  background-color:#b1f0ca;
+  font-size: 18px;
+  float: left;
+  margin: 3px;
+  cursor: default;
+}
+.footer{
+  height: 200px;
+  background-color: gray;
+}
+.footer-text{
+  text-align: center;
+ padding-top: 150px;
+  font-size: 10px;
+  color: #c5c9d1;
+}
 @media (max-width:600px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -131,7 +175,7 @@ body{
     overflow-y: auto;
   }
   .user{
-    padding-left: 15px;
+    margin-left: 15px;
   }
   .text {
   position: absolute;
@@ -139,15 +183,16 @@ body{
   right: 130px;
   color:white;
   font-size: 45px;
-}
+  }
 .text2 {
   position: absolute;
   top: 130px;
   right: 100px;
   color:white;
   font-size: 14px;
+ }
 }
-}
+
 
 </style>
 
@@ -168,35 +213,153 @@ body{
   </div>
   
   <div class="nav-links">
-    <a href="https://lisakuhn.netlify.com/">home</a>
-    <a href="#classes" >classes</a>
-    <a href="#research" >research</a>
+    <a href="http://lisakuhn.netlify.com/">Home</a>
+    <a href="#class">Class</a>
+    <a href="#research">Research</a>
     <a href="https://wit-selu.netlify.com/" target="_blank">WIT </a>
-    <a href="#contact">contact</a>
+    <a href="#contact">Contact</a>
   </div>
 </div>
 
-		<body>
-			<div class="main">
-        <img class="user" src="user.jpg" >
+    <body>
+      <div class="main">
+        <img class="user" src="img/user2.jpg" >
         <div class="text">Lisa Kuhn, PhD</div>
         <div class="text2">Mathematics Professor at Southeastern LA University</div>
       </div>
 
+
       <div class="container">
         <div class="row">
-          <div class="col-md-8" style="padding: 20px; font-size: 25px">
-           <p>Office: 321 Fayard Hall</p>
-              <p>Phone: (985) 549-5906</p>
-              <p>Email: lisa.kuhn@southeastern.edu</p>
+          <div class="col-md-7" style="padding: 20px; font-size: 20px">
+            <h2>Skills and Expertise</h2>
+            <button class="button2">Micro Air Vehicle</button>
+            <button class="button2">Control Theory</button>
+            <button class="button2">Partial Differential Equations</button>
+            <button class="button2">Numerical Analysis</button>
+            <button class="button2">Finite Element Method</button>
           </div>
-           <div class="col-md-4" style="padding: 20px; font-size: 25px">
-            <p> Research</p>
-            <p>Interests</p>
-            <p>WIT</p>
+
+          <div class="col-md-5" id="class" style="padding: 20px; font-size: 20px">
+            <h2>Classes Taught</h2>
+            <button class="button2">Calculus I</button>
+            <button class="button2">Calculus II</button>
+            <button class="button2">Differential Equations</button>
+            <button class="button2">Numerical Methods</button>
+            
           </div>
         </div>
       </div>
-		</body>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8" style="padding: 20px; font-size: 20px">
+
+            <div class="card">
+              <div>
+                <h1 style="background-color: #72a1ba;  padding: 5px; border-radius: 5px; color: #fff">Projects</h1>
+              </div>
+              <div style="padding: 10px">
+                 <ol>
+                 <li><h4>Development of Fast Stiff ODE Solvers</h4></li>
+                 <p>Goal: Analyzing Matlab's software performance interfaced with high level languages for expediting stiff ODE solvers.</p>              
+                <br>
+                 <li>
+                 <h4>Simulation and Modeling of Smart Material Multiple Component Structures</h4></li> <p>Goal: Developing a modified finite element basis which meets the smoothness requirements for realistic control actuation while simultaneous satisfying the boundary conditions associated with some recently developed MCS models.</p>
+              </div> <!-- padding -->
+            </div> <!-- card -->
+          </div><!-- col -->
+
+            <div class="col-md-4" id="contact" style="padding: 20px; font-size: 25px">
+              <div class="card"> 
+              <div>
+                <h1 style="background-color: #72a1ba;  padding: 5px; border-radius: 5px;color: #fff">Contact</h1>
+              </div>             
+              <div style="padding: 10px">
+                 <h4>Office Hours (321 Fayard Hall): </h4>
+                 <ul style="list-style: none; font-size: 15px; color: black;" >
+                  <li> M 8:00 – 9:15</li>
+                   <li> T 8:00 – 10:45, 1:30 – 2:30</li>
+                    <li>W 8:00 – 9:15</li>
+                    <li>Th 8:00 – 10:45, 1:30 – 2:30</li>
+                  </ul>
+                 <h4>Phone: (985) 549-5906</h4>
+                 <h4>Email: lisa.kuhn@southeastern.edu </h4>    
+
+                <div style="text-align: center; font-size: 35px">
+                <a href="https://www.linkedin.com/in/lisa-kuhn-bb729b23/"> 
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i></a> 
+                <a href="mailto:Lisa.Kuhn@selu.edu">
+                <i class="fa fa-envelope" aria-hidden="true"></i></a> 
+                <a href="https://twitter.com/oursoutheastern?ref_src=twsrc%5Etfw">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              </div> <!-- padding -->
+            </div>
+          </div> <!-- colmd -->
+        </div><!-- row -->
+      </div> <!-- container -->
+
+     <div class="container">
+       <div class="row">
+
+            <div class="col-md-6" id="research" style="padding: 20px; font-size: 20px">
+              <div class="card">
+               <div>
+                <h1 style="background-color: #72a1ba;  padding: 5px; border-radius: 5px; color: #fff">Research</h1>
+               </div>
+               <div style="padding: 10px">
+                 <ol>
+                 <li><h4>Development of a Rapid First-Order Differential Equation Solver for Stiff Systems</h4></li>
+                 <button class="button1">Conference Paper</button>              
+                 <br>
+                 <li>
+                 <h4>Modified Spline Basis Functions for Simulating PDE Systems using the Finite Element Method</b></h4></li>      
+                 <button class="button1">Presentation</button> 
+                 <br>
+                 <li>
+                 <h4>An analysis of MATLAB's software performance interfaced with high-level C language for expediting numerical integration techniques</b></h4></li>      
+                 <button class="button1" >Conference Paper</button> 
+                 <br>
+                 <li>
+                 <h4>Frequency and Time Domain Analysis of an Aeroelastic Wing Multiple Component Structure</b></h4></li>      
+                 <button class="button1" >Article</button> 
+              </div>
+            </div>
+         </div> <!-- col -->
+
+        <div class="col-md-6" style="padding: 20px; font-size: 20px">
+              <div class="card">
+               <div>
+                <h1 style="background-color: #72a1ba;  padding: 5px; border-radius: 5px; color: #fff"">Research</h1>
+               </div>
+               <ol start="5">
+               <div style="padding: 10px">
+                 <li><h4>A Comparison of Morphing Control Strategies for a Flexible Wing Micro Air Vehicle Model Incorporating Spatial Hysteresis Damping</h4></li>
+                 <button class="button1">Conference Paper</button>              
+                 <br>
+                 <li>
+                 <h4>Nonlinear controllers for wing morphing trajectories of a heave dynamics model</b></h4></li>      
+                 <button class="button1">Article</button> 
+                 <br>
+                 <li>
+                 <h4>Target tracking strategies for a nonlinear, flexible aircraft-inspired model</b></h4></li>      
+                 <button class="button1" >Conference Paper</a></button> 
+                 <br>
+                 <li>
+                 <h4>Modeling and control for heave dynamics of a flexible wing micro aerial vehicle distributed parameter system</b></h4></li>      
+                 <button class="button1" >Article</a></button> 
+              </div>
+            </div>
+          
+        </div>
+
+       </div>
+     </div>  
+    </div>
+     <div class="footer">
+       <div class="footer-text">© Lisa Kuhn | All Rights Reserved</div>
+     </div>
+
+  </body>
 
 </html>
