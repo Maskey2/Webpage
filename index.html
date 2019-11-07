@@ -13,12 +13,16 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-  background-color:#ebf4f7; 
+  background-color:#f2f8fa; 
   padding:0;
   margin: 0;
+  color: black;
+}
+h2,h3,h4,p,li{
+  color: black;
 }
 .main{
-  background-image: url('img2.jpg');
+  background-image: url('img/img2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -26,7 +30,7 @@ body{
 }
 .text {
   position: absolute;
-  top: 200px;
+  top: 180px;
   right: 200px;
   color:white;
   font-size: 85px;
@@ -34,15 +38,43 @@ body{
 }
 .text2 {
   position: absolute;
-  top: 295px;
+  top: 288px;
   right: 200px;
   color:white;
   font-size: 24px;
    font-family: 'Righteous', cursive;
 }
+.text3 {
+  position: absolute;
+  top: 318px;
+  right: 210px;
+  color:white;
+  font-size: 24px;
+   font-family: 'Righteous', cursive;
+}
+.text4 {
+  position: absolute;
+  top: 365px;
+  right: 210px;
+  color:white;
+  font-size: 19px;
+   font-family: 'Righteous', cursive;
+   padding: 5px;
+  background-color: black;
+  border: 2px solid #fafafa;
+  text-decoration: none;
+
+}
+.cv{
+  color: white;
+}
+.cv:hover, .research:hover{
+  text-decoration: none;
+  color: white;
+}
 
 .nav {
-  height: 50px;
+  height: 60px;
   width: 100%;
   background-color: #72a1ba;
   position: relative;
@@ -54,9 +86,9 @@ body{
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 13px 10px 13px;
+  font-size: 26px;
+  color: white;
 }
 
 .nav > .nav-btn {
@@ -66,14 +98,15 @@ body{
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: 23px;
+
 }
 
 .nav > .nav-links > a {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #efefef;
+  color: white;
 }
 
 .nav > .nav-links > a:hover {
@@ -102,34 +135,74 @@ a{
   text-decoration: none;
 }
 
+.research{
+  text-decoration: none;
+  color: white;
+}
+.alink{
+  text-decoration: none;
+  color: black;
+  padding-left: 50px;
+}
+.link{
+   text-decoration: none;
+  color: black;
+  background-color:#c9cbd6;
+  padding:4px;
+  border-radius: 20px;
+}
+.link:hover{
+  text-decoration: none;
+  color: #292b59;
+
+}
+.text-area{
+padding: 55px;
+font-size: 18px;
+color:black;
+}
+
 .button1{
-  border:1px solid #50a371;
+  border:1px solid #262f5c;
   border-radius: 5px;
   color: black; 
-  background-color:#b1f0ca;
+  background-color:#bfe5f2;
   font-size: 15px;
   cursor: default;
 }
 .button2{
-  border:1px solid #50a371;
+  border:1px solid #383838;
   border-radius: 5px;
   color: black; 
-  background-color:#b1f0ca;
+  background-color:#fafafa;
   font-size: 18px;
   float: left;
   margin: 3px;
   cursor: default;
 }
 .footer{
-  height: 200px;
+  height: 300px;
   background-color: #273238;
 }
 .footer-text{
   text-align: center;
- padding-top: 150px;
+ padding-top: 200px;
   font-size: 10px;
-  color: gray;
+  color: #c5c9d1;
 }
+.gallary {
+  margin:1em;
+  
+  display: grid;    
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 1em;  
+}
+.gallary img {
+   width: 100%;
+}
+
+
+
 @media (max-width:600px) {
   .nav > .nav-btn {
     display: inline-block;
@@ -157,7 +230,7 @@ a{
     display: block;
     width: 100%;
     background-color: #333;
-    height: 0px;
+    height: 400px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
@@ -181,7 +254,16 @@ a{
   display:none;
   }
 .text2 {
-  display:none;
+  display: none;
+ }
+ .text3 {
+  display: none;
+ }
+ .text4 {
+  display: none;
+ }
+ .alink{
+  display: none;
  }
 }
 
@@ -215,15 +297,18 @@ a{
 
     <body>
       <div class="main">
-        <img class="user" src="user.jpg" >
+        <img class="user" src="img/user2.jpg" >
         <div class="text">Lisa Kuhn, PhD</div>
-        <div class="text2">Mathematics Professor at Southeastern LA University</div>
+        <div class="text2"> Assistant Professor of Mathematics </div>
+        <div class="text3">Southeastern LA University</div>
+         <div class="text4"><a class="cv" href="cv.pdf" target="_blank">Curriculum Vitae</a></div>
+
       </div>
 
 
       <div class="container">
         <div class="row">
-          <div class="col-md-7" style="padding: 20px; font-size: 20px">
+          <div class="col-md-6" style="padding: 20px; font-size: 20px">
             <h2>Skills and Expertise</h2>
             <button class="button2">Micro Air Vehicle</button>
             <button class="button2">Control Theory</button>
@@ -232,16 +317,43 @@ a{
             <button class="button2">Finite Element Method</button>
           </div>
 
-          <div class="col-md-5" id="class" style="padding: 20px; font-size: 20px">
+          <div class="col-md-6" id="class" style="padding: 20px; font-size: 20px">
             <h2>Classes Taught</h2>
             <button class="button2">Calculus I</button>
             <button class="button2">Calculus II</button>
             <button class="button2">Differential Equations</button>
             <button class="button2">Numerical Methods</button>
+            <button class="button2">Simulation and Modeling</button>
+            <button class="button2">Partial Differential Equations</button>
             
           </div>
         </div>
-      </div>
+      </div><!--  conatiner -->
+
+<div style="background-color:  #c5d8ed;">
+  <div class="conatainer" style="text-align: center; margin: 40px; padding: 5px;">
+    <h2>Undergraduate Research Group</h2>
+  </div>
+  <div class="gallary">
+  <div class="item-1">
+    <img src="https://i.imgur.com/UWgVHpW.jpg">
+  </div>
+  <div class="item-3">
+    <img src="https://i.imgur.com/1YMVpv6.jpg">
+  </div>
+  <div class="item-2">
+    <img src="https://i.imgur.com/PaX6Qi8.jpg">
+  </div> 
+  <div class="item-4">
+    <img src="https://i.imgur.com/xCsUsqd.jpg">
+  </div>
+</div> <!-- gallary -->
+
+<div class="text-area">Dr. Kuhn's undergraduate researchers consist of both math and computer science majors. Some of these students have been co-authors on peer-reviewed papers. Some have presented their work at regional or international conferences. After graduation these students have gone on to pursue
+doctoral degrees, work for the U.S. Naval Research Laboratory (NRL), or start industry jobs. Contact Dr. Kuhn for more info on her ongoing projects.
+</div>
+</div>
+
 
       <div class="container">
         <div class="row">
@@ -293,13 +405,13 @@ a{
 
      <div class="container">
        <div class="row">
-
-            <div class="col-md-6" id="research" style="padding: 20px; font-size: 20px">
+            <div class="col-md-12" id="research" style="padding: 20px; font-size: 20px">
               <div class="card">
                <div>
-                <h1 style="background-color: #72a1ba;  padding: 5px; border-radius: 5px; color: #fff">Research</h1>
+                <h1 style="background-color: #72a1ba;  padding: 5px; border-radius: 5px; color: #fff"><a class="research" href="https://www.researchgate.net/profile/Lisa_Kuhn4" target="_blank">Research</a></h1>
                </div>
                <div style="padding: 10px">
+                <p class="alink"><a class="link"href="https://www.researchgate.net/profile/Lisa_Kuhn4" target="_blank">Click here to view the Reseaches in Research Gate</a></p>
                  <ol>
                  <li><h4>Development of a Rapid First-Order Differential Equation Solver for Stiff Systems</h4></li>
                  <button class="button1">Conference Paper</button>              
@@ -314,18 +426,8 @@ a{
                  <br>
                  <li>
                  <h4>Frequency and Time Domain Analysis of an Aeroelastic Wing Multiple Component Structure</b></h4></li>      
-                 <button class="button1" >Article</button> 
-              </div>
-            </div>
-         </div> <!-- col -->
-
-        <div class="col-md-6" style="padding: 20px; font-size: 20px">
-              <div class="card">
-               <div>
-                <h1 style="background-color: #72a1ba;  padding: 5px; border-radius: 5px; color: #fff"">Research</h1>
-               </div>
-               <ol start="5">
-               <div style="padding: 10px">
+                 <button class="button1" >Article</button>                
+                 <br>
                  <li><h4>A Comparison of Morphing Control Strategies for a Flexible Wing Micro Air Vehicle Model Incorporating Spatial Hysteresis Damping</h4></li>
                  <button class="button1">Conference Paper</button>              
                  <br>
@@ -338,18 +440,21 @@ a{
                  <button class="button1" >Conference Paper</a></button> 
                  <br>
                  <li>
-                 <h4>Modeling and control for heave dynamics of a flexible wing micro aerial vehicle distributed parameter system</b></h4></li>      
+                 <h4>Modeling and control for heave dynamics of a flexible wing micro aerial vehicle distributed parameter system</b></h4></li>
                  <button class="button1" >Article</a></button> 
               </div>
-            </div>
+            </div>     <!-- padding -->     
+          </div><!-- card -->
+        </div><!-- col -->
+      </div><!-- row -->          
+</div> <!-- container -->
           
-        </div>
-
-       </div>
-     </div>  
-    </div>
+          
+    
      <div class="footer">
+     
        <div class="footer-text">© Lisa Kuhn | All Rights Reserved</div>
+
      </div>
 
   </body>
